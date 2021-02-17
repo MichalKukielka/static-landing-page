@@ -1,4 +1,4 @@
-@import url('http://fonts.googleapis.com/css?family=Poppins:400,500,700')
+@import url('http://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -8,22 +8,43 @@ body {
     padding: 0;
     margin: 0;
     background-color: #2F303A;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2em;
+    font-family: Poppins, sans-serif;
+    font-size: 1.2rem;
     color: whitesmoke;
+    min-height: 100vh;
+  }
+  
 
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
-
-    min-height: 100vh;
+    flex-grow: 1;
+  }
+/* Single section of an app that fills of the remaining height of page*/
+.full-height-grow {
+    display: flex;
+    flex-direction: column;
 }
 
-.main-header {
+.main-header, .main-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.main-header {
     height: 140px;
+}
+
+.main-footer {
+    background-color: #202027;
+    height: 70px;
+}
+.main-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .brand-logo {
@@ -43,7 +64,7 @@ body {
     padding: 0;
 }
 
-.main-nav ul {
+.main-nav ul, .footer-nav ul {
     display: flex;
     list-style: none;
     margin: 0;
@@ -51,13 +72,45 @@ body {
 
 }
 
-.main-nav a {
+.main-nav a, .footer-nav a {
     color: inherit;
     text-decoration: none;
     padding: 1rem;
 }
 
 
-.main-nav a:hover {
+.main-nav a:hover, .footer-nav a:hover {
     color: #adadad;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 3em;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    color: whitesmoke;
+    background-color: #1762A7;
+    padding: .75rem 1.25rem;
+    text-decoration: none;
+    border-radius: .5rem;
+    font-size: .9rem;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.social-link img {
+    width: 1em;
+    margin-right: .5em;
 }
