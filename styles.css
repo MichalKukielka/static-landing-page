@@ -12,15 +12,14 @@ body {
     font-size: 1.2rem;
     color: whitesmoke;
     min-height: 100vh;
-  }
-  
+}
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
     flex-grow: 1;
-  }
+}
 /* Single section of an app that fills of the remaining height of page*/
 .full-height-grow {
     display: flex;
@@ -103,6 +102,17 @@ body {
     text-decoration: none;
     border-radius: .5rem;
     font-size: .9rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2077c9;
+}
+
+.btn:focus {
+    background-color: #2a8fee;
 }
 
 .social-link {
